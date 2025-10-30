@@ -12,7 +12,7 @@ import math
 class X3UavRl(gym.Env):
     def __init__(self):
         super().__init__()
-        subprocess.run("cd /home/flow/reinforcement_learning/gazebo_sim/x3_uav && ./spawn.sh", shell=True)
+        subprocess.run("cd /<path_to_spawn.sh_file> && ./spawn.sh", shell=True)
 
         rclpy.init(args=None)
         self.node = Node("X3_uav_gazebo_rl_env")
